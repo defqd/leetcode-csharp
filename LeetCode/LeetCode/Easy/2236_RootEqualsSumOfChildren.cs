@@ -33,5 +33,4 @@ namespace LeetCode.Easy
             this.right = right;
         }
     }
-
 }

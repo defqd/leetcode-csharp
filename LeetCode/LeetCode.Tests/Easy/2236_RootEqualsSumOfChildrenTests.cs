@@ -3,6 +3,7 @@ using System.Collections;
 
 namespace LeetCode.Tests.Easy
 {
+    [TestFixture]
     public class RootEqualsSumOfChildrenTests
     {
         [TestCaseSource(typeof(RootEqualsSumOfChildrenTestSource))]
@@ -13,7 +14,6 @@ namespace LeetCode.Tests.Easy
             Assert.That(expected, Is.EqualTo(result));
         }
     }
-
     public class RootEqualsSumOfChildrenTestSource : IEnumerable
     {
         public IEnumerator GetEnumerator()

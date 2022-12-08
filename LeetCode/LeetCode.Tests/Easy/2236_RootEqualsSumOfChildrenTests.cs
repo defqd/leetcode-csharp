@@ -14,7 +14,7 @@ namespace LeetCode.Tests.Easy
             Assert.That(expected, Is.EqualTo(result));
         }
     }
-    public class RootEqualsSumOfChildrenTestSource : IEnumerable
+    class RootEqualsSumOfChildrenTestSource : IEnumerable
     {
         public IEnumerator GetEnumerator()
         {

@@ -43,16 +43,13 @@ namespace LeetCode.Easy
 
             //var list = new List<ListNode>();
 
-            //int lenght = 0;
-
             //while (head != null)
             //{
             //    list.Add(head);
             //    head = head.next;
-            //    lenght++;
             //}
 
-            //return list.ElementAt(lenght / 2);
+            //return list.ElementAt(list.Count / 2);
         }
     }
  

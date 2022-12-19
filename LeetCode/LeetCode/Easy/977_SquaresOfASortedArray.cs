@@ -25,22 +25,25 @@ namespace LeetCode.Easy
     {
         public static int[] SortedSquares(int[] nums)
         {
-            int [] arr = new int[nums.Length];
-            int begIndex = 0;
-            int endIndex = nums.Length - 1;
-            int end = endIndex;
+            return nums.Select(x => x * x).OrderBy(x => x).ToArray();
 
-            while (begIndex <= endIndex)
-            {
-                if (Math.Abs(nums[endIndex]) > Math.Abs(nums[begIndex]))
-                {
-                    arr[end--] = nums[endIndex] * nums[endIndex--];
-                }
-                else
-                    arr[end--] = nums[begIndex] * nums[begIndex++];
-            }
+            //int [] arr = new int[nums.Length];
+            //int begIndex = 0;
+            //int endIndex = nums.Length - 1;
+            //int end = endIndex;
 
-            return arr;
+            //while (begIndex <= endIndex)
+            //{
+            //    if (Math.Abs(nums[endIndex]) > Math.Abs(nums[begIndex]))
+            //    {
+            //        arr[end--] = nums[endIndex] * nums[endIndex--];
+            //    }
+            //    else
+            //        arr[end--] = nums[begIndex] * nums[begIndex++];
+            //}
+
+            //return arr;
+
 
             //for (int i = 0; i < nums.Length; i++)
             //    nums[i] *= nums[i];

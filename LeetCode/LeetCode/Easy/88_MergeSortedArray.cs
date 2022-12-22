@@ -45,18 +45,21 @@ namespace LeetCode.Easy
 
             //nums1 = nums1.Select(x => x).OrderBy(x => x).ToArray();
 
-            for (int i = nums1.Length - 1; i > 0; i--)
-            {
-                for (int j = nums1.Length - 1; j > 0; j--)
-                {
-                    if (nums1[j] < nums1[j - 1])
-                    {
-                        int temp = nums1[j];
-                        nums1[j] = nums1[j - 1];
-                        nums1[j - 1] = temp;
-                    }
-                }
-            }
+            Array.Sort(nums1);
+
+            //for (int i = nums1.Length - 1; i > 0; i--)
+            //{
+            //    for (int j = nums1.Length - 1; j > 0; j--)
+            //    {
+            //        if (nums1[j] < nums1[j - 1])
+            //        {
+            //            int temp = nums1[j];
+            //            nums1[j] = nums1[j - 1];
+            //            nums1[j - 1] = temp;
+            //        }
+            //    }
+            //}
+            
 
             return nums1;
         }

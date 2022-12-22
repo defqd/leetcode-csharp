@@ -31,8 +31,6 @@ The result of the merge is [1].
 Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
  
 */
-using System;
-
 namespace LeetCode.Easy
 {
     public static class MergeSortedArray
@@ -45,17 +43,20 @@ namespace LeetCode.Easy
             for (int i = nums1.Length - 1; i >= m; i--)
                 nums1[i] = nums2[--n];
 
-            nums1 = nums1.Select(x => x).OrderBy(x => x).ToArray();
+            //nums1 = nums1.Select(x => x).OrderBy(x => x).ToArray();
 
-            //for (int i = nums1.Length - 1; i > 0; i--)
-            //{
-            //    if (nums1[i] < nums1[i - 1])
-            //    {
-            //        int temp = nums1[i];
-            //        nums1[i] = nums1[i - 1];
-            //        nums1[i - 1] = temp;
-            //    }
-            //}
+            for (int i = nums1.Length - 1; i > 0; i--)
+            {
+                for (int j = nums1.Length - 1; j > 0; j--)
+                {
+                    if (nums1[j] < nums1[j - 1])
+                    {
+                        int temp = nums1[j];
+                        nums1[j] = nums1[j - 1];
+                        nums1[j - 1] = temp;
+                    }
+                }
+            }
 
             return nums1;
         }

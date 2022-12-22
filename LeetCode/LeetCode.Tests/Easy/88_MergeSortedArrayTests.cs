@@ -31,13 +31,13 @@ namespace LeetCode.Tests.Easy
             {
                 new int[] { 1 },
                 1,
-                new int[] {},
+                new int[] { 0 },
                 0,
                 new int[] { 1 }
             };
             yield return new object[]
             {
-                new int[] {},
+                new int[] { 0 },
                 0,
                 new int[] { 1 },
                 1,

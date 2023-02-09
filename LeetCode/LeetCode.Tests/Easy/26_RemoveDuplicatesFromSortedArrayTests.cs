@@ -7,7 +7,7 @@ namespace LeetCode.Tests.Easy
     public class RemoveDuplicatesFromSortedArrayTests
     {
         [TestCaseSource(typeof(RemoveDuplicatesFromSortedArrayTestSource))]
-        public void RemoveDuplicates(int[] nums, int expected)
+        public void RemoveDuplicatesTest(int[] nums, int expected)
         {
             var result = RemoveDuplicatesFromSortedArray.RemoveDuplicates(nums);
 

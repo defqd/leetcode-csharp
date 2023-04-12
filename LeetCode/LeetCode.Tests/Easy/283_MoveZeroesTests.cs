@@ -7,7 +7,7 @@ namespace LeetCode.Tests.Easy
     public class MoveZeroesTests
     {
         [TestCaseSource(typeof(MoveZeroesTestSource))]
-        public void MoveZero(int[] nums, int[] expected)
+        public void MoveZeroTest(int[] nums, int[] expected)
         {
             MoveZeroes.MoveZero(nums);
 

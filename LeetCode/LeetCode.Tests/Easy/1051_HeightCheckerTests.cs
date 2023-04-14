@@ -6,6 +6,7 @@ namespace LeetCode.Tests.Easy
     [TestFixture]
     public class HeightCheckerTests
     {
+        [TestCaseSource(typeof(HeightCheckerTestSource))]
         public void HeightCheckerTest(int[] heights, int expected)
         {
             var result = HeightCheckerSolution.HeightChecker(heights);

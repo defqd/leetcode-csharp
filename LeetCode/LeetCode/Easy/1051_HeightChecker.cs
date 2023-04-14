@@ -66,6 +66,30 @@ namespace LeetCode.Easy
             }
 
             return k;
+
+            //Counting sort
+
+            //var countingSort = new int[101];
+
+            //for (int i = 0; i < heights.Length; i++)
+            //    countingSort[heights[i]]++;
+
+            //int index = 0;
+            //int result = 0;
+            //for (int i = 1; i < countingSort.Length; i++)
+            //{
+            //    while (countingSort[i] > 0)
+            //    {
+            //        if (heights[index] != i)
+            //        {
+            //            result++;
+            //        }
+            //        countingSort[i]--;
+            //        index++;
+            //    }
+            //}
+
+            //return result; 
         }
     }
 }

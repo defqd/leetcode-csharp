@@ -67,6 +67,19 @@ namespace LeetCode.Easy
 
             return k;
 
+            //var sorted = heights.OrderBy(x => x).ToArray();
+
+            //int count = 0;
+            //for (int i = 0; i < heights.Length; i++)
+            //{
+            //    if (heights[i] != sorted[i])
+            //    {
+            //        count++;
+            //    }
+            //}
+
+            //return count;
+
             //Counting sort
 
             //var countingSort = new int[101];

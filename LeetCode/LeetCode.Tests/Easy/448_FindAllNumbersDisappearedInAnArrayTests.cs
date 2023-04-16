@@ -28,6 +28,11 @@ namespace LeetCode.Tests.Easy
             {
                 new int[] { 1, 1 },
                 new List<int> { 2 }
+            };            
+            yield return new object[]
+            {
+                new int[] { 1, 4, 4, 2 },
+                new List<int> { 3 }
             };
         }
     }

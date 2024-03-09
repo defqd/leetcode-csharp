@@ -4,7 +4,7 @@
     {
         public static int MaxNumberOfBalloons(string text)
         {
-            var result = text.Length;
+            //var result = text.Length;
 
             var count = new Dictionary<char, int>()
             {
@@ -24,10 +24,14 @@
             count['l'] /= 2;
             count['o'] /= 2;
 
-            foreach (var c in count.Values)
-                result = Math.Min(result, c);
+            return count.Values.Min();
 
-            return result;
+            //foreach (var c in count.Values)
+            //    result = Math.Min(result, c);
+
+            //return result;
+
+            //***
 
             //var result = text.Length;
 
